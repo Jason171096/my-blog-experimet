@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Styles/estilos.css">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <title>Web</title>
+</head>
+
+<body>
+    <div class="body_div">
+        <!-- <img src="Resources/Fotos/Photo4.jpg"  alt="" width="1000" height="300"> -->
+        <header class="body_div__header">
+            <nav class="body_div__nav">
+                <ul id="horizontal-list">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Index.html">About</a></li>
+                    <li><a href="Index.html">Projects</a></li>
+                    <li><a href="Index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <img id="main__photo">
+                    <hr>
+                    <p>Bienvenido a mi blog personal en donde encontraras mi experiencia de mi vida</p>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section id="initial">
+                <div class="container">
+                    <article>
+                        <div class="initial_title">
+                            <h1 id="initial_title_h1">!Hola Mundo¡</h1>
+                        </div>
+                        <div class="initial_nombre">
+                            <div id="initial_nombre_h1">
+                                <h1>Jason Martinez</h1>
+                            </div>
+                            <div id="initial_nombre_h2">
+                                <h2>Designer / Developer</h2>
+                            </div>
+                        </div>
+                        <div class="initial_navigation">
+                            <input type="button" value="<">
+                            <h1>01 / 03</h1>
+                            <input type="button" value=">">
+                        </div>
+                        <div class="initial_rectangule">
+                            <div id="rectangule_1"></div>
+                            <div id="rectangule_2"></div>
+                            <div id="rectangule_3"></div>
+                        </div>
+                        <div class="initial_social">
+                            <div>
+                                <h1>Social</h1>
+                                <img src="Resources/Iconos/facebook.png" alt="" onclick=OpenURL(1)>
+                                <img src="Resources/Iconos/instagram.png" alt="" onclick=OpenURL(2)>
+                                <img src="Resources/Iconos/telegram.png" alt="" onclick=OpenURL(3)>
+                                <img src="Resources/Iconos/linkedin.png" alt="" onclick=OpenURL(4)>
+                                <img src="Resources/Iconos/whatsapp.png" alt="" onclick=OpenURL(5)>
+                                <img src="Resources/Iconos/github.png" alt="" onclick=OpenURL(6)>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+    <script>
+        function OpenURL(opcion) {
+            switch(opcion){
+                case 1:
+                    window.open("https://www.facebook.com");
+                    break;
+                case 2:
+                    window.open("https://www.instagram.com");
+                    break;
+                case 3:
+                    window.open("https://www.telegram.com");
+                    break;
+                case 4:
+                    window.open("https://www.linkedin.com");
+                    break;
+                case 5:
+                    window.open("https://www.whatsapp.com");
+                    break;
+                case 6:
+                    window.open("https://www.github.com");
+                    break;   
+            }
+        }
+    </script>
+    
+</html>
